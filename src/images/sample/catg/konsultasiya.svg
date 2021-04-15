@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.072" height="36" viewBox="0 0 40.072 36">
+  <g id="Group_1548" data-name="Group 1548" transform="translate(-239.912 -1160)">
+    <path id="Path_309" data-name="Path 309" d="M1237.489,1062.692a13,13,0,1,0-5.78,21.738,11.03,11.03,0,0,1,4.471-.288h0l2.74.4a1.793,1.793,0,0,0,2.031-2.031l-.4-2.74-.015-.1a10.611,10.611,0,0,1,.292-4.331A13,13,0,0,0,1237.489,1062.692Z" transform="translate(-961.312 111.116)" fill="#fff"/>
+    <path id="Path_310" data-name="Path 310" d="M1219.118,1062.692a13,13,0,1,1,5.78,21.738,11.03,11.03,0,0,0-4.471-.288h0l-2.74.4a1.793,1.793,0,0,1-2.031-2.031l.4-2.74.015-.1a10.611,10.611,0,0,0-.292-4.331A13,13,0,0,1,1219.118,1062.692Z" transform="translate(-974.312 102.116)" fill="none" stroke="#fff" stroke-width="2"/>
+    <line id="Line_15" data-name="Line 15" x2="10" transform="translate(261.5 1180.5)" fill="none" stroke="#4b7bec" stroke-linecap="round" stroke-width="2"/>
+    <line id="Line_16" data-name="Line 16" x2="5" transform="translate(261.5 1186.5)" fill="none" stroke="#4b7bec" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>

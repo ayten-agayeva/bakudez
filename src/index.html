@@ -1,0 +1,158 @@
+{% extends "layout.html" %} {% block content %}
+<div class="home_slider">
+	<div class="slider">
+		<div>
+			<div class="item">
+				<img src="images/slider-img.png" />
+				<div class="container">
+					<div>
+						<div class="title">PESTS NEVER STOP. NEITHER DO WE.</div>
+						<div class="desc">We have the effective solutions to shut down
+                            spiders, cockroaches, ants and more. Guaranteed.</div>
+                        <div class="gorush_al">
+                            <form action="" method="">
+                                <div class="form">
+                                        <div class="form_group">
+                                            <label for="name">Ad, Soyad</label>
+                                            <input id="name" name="name" class="validate[required]" type="text" />
+                                        </div>
+                                        <div class="form_group">
+                                            <label for="phone">Əlaqə nömrəsi</label>
+                                            <input id="phone" type="text" class="validate[required]" data-mask="phone">
+                                        </div>
+                                        <div class="form_group service_select">
+                                            <label for="service">Xidmət seçin</label>
+                                            <select id="service">
+                                                <option></option>
+												<option>Hovuzlar</option>
+												<option>Təmizlik</option>
+												<option>Sürünən və Əqrəblər</option>
+												<option>Dezodorasiya</option>
+												<option>Dezinseksiya</option>
+												<option>Dezinfeksiya</option>
+												<option>Fumiqasiya</option>
+												<option>Havalandırma</option>
+                                            </select>
+                                        </div>
+                                        <div class="form_group">
+                                            <button type="submit" class="btn secondry">Göndər</button>
+                                        </div>
+                                    </div>
+                            </form>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="partners">
+		<div class="slider">
+			{% for i in 1..9 %}
+			<div><a class="item"><img src="images/partner_{{i%4+1}}.svg"/></a></div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<div class="services_tab">
+	<div class="title_wrap"><h2 class="page_title">HOW CAN WE PROTECT <br/>YOUR HOME?</h2></div>
+	<div class="tab_wrap">
+		<div class="tabs tabs1" data-target=".services_list_tab">
+			<a class="active">Dezinfeksiya</a>
+			<a>Həşəratlarla mübarizə</a>
+			<a>Gəmiricilərlə mübarizə</a>
+			<a>Təmizlik</a>
+		</div>
+	</div>
+	<div class="tab_content_wrap">
+		<div class="services_list_tab tabs_content">
+			<div class="tab_desc active">
+				<div class="d-flex">
+					<span class="text_img"><img src="images/virus.svg"/></span>
+					<div>
+						<div class="title">Dezinfseksiya</div>
+						<p>Sağlamlığınıza diqqət yetirmək, yalnız sağlam bir həyat tərzi sürmək yox, həm də evinizin təmizliyi 
+							eməkdir. Biz bilirik ki, qapalı məkanlarda da çirk və tozla yanaşı, çox sayda infeksiya daşıyıcısı 
+							gəzir. Bunlardan ən çox yayılmışı həşəratlardır <strong>(tarakan, qarışqa, milçək, nəm böcəkləri və s.)</strong>. 
+							Bəzən belə çağırılmamış qonaqları təkbaşına yox etmək çox çətindir. Bu zaman həşəratlarla peşəkar 
+							mübarizə aparacağını bilən mütəxəssislərimiz Sizə köməyə gəlir . İnsanlar və ev heyvanları üçün təhlükəli 
+							xəstəliklərin daşıyıcısı olan həşəratların məhv edilməsinə yönəlmiş tədbirlər dezinseksiya adlanır.</p>
+					</div>
+				</div>
+				<a href="" class="btn secondry">Daha ətraflı</a>
+			</div>
+			<div class="tab_desc">
+				<div class="d-flex">
+					<span class="text_img"><img src="images/dez.svg"/></span>
+					<div>
+						<div class="title">Həşəratlarla mübarizə</div>
+						<p>Sağlamlığınıza diqqət yetirmək, yalnız sağlam bir həyat tərzi sürmək yox, həm də evinizin təmizliyi 
+							eməkdir. Biz bilirik ki, qapalı məkanlarda da çirk və tozla yanaşı, çox sayda infeksiya daşıyıcısı 
+							gəzir. Bunlardan ən çox yayılmışı həşəratlardır <strong>(tarakan, qarışqa, milçək, nəm böcəkləri və s.)</strong>. 
+							Bəzən belə çağırılmamış qonaqları təkbaşına yox etmək çox çətindir. Bu zaman həşəratlarla peşəkar 
+							mübarizə aparacağını bilən mütəxəssislərimiz Sizə köməyə gəlir . İnsanlar və ev heyvanları üçün təhlükəli 
+							xəstəliklərin daşıyıcısı olan həşəratların məhv edilməsinə yönəlmiş tədbirlər dezinseksiya adlanır.</p>
+					</div>
+				</div>
+				<a href="" class="btn secondry">Daha ətraflı</a>
+			</div>
+			<div class="tab_desc">
+				<div class="d-flex">
+					<span class="text_img"><img src="images/der.svg"/></span>
+					<div>
+						<div class="title">Gəmiricilərlə mübarizə</div>
+						<p>Sağlamlığınıza diqqət yetirmək, yalnız sağlam bir həyat tərzi sürmək yox, həm də evinizin təmizliyi 
+							eməkdir. Biz bilirik ki, qapalı məkanlarda da çirk və tozla yanaşı, çox sayda infeksiya daşıyıcısı 
+							gəzir. Bunlardan ən çox yayılmışı həşəratlardır <strong>(tarakan, qarışqa, milçək, nəm böcəkləri və s.)</strong>. 
+							Bəzən belə çağırılmamış qonaqları təkbaşına yox etmək çox çətindir. Bu zaman həşəratlarla peşəkar 
+							mübarizə aparacağını bilən mütəxəssislərimiz Sizə köməyə gəlir . İnsanlar və ev heyvanları üçün təhlükəli 
+							xəstəliklərin daşıyıcısı olan həşəratların məhv edilməsinə yönəlmiş tədbirlər dezinseksiya adlanır.</p>
+					</div>
+				</div>
+				<a href="" class="btn secondry">Daha ətraflı</a>
+			</div>
+			<div class="tab_desc">
+				<div class="d-flex">
+					<span class="text_img"><img src="images/fum.svg"/></span>
+					<div>
+						<div class="title">Təmizlik</div>
+						<p>Sağlamlığınıza diqqət yetirmək, yalnız sağlam bir həyat tərzi sürmək yox, həm də evinizin təmizliyi 
+							eməkdir. Biz bilirik ki, qapalı məkanlarda da çirk və tozla yanaşı, çox sayda infeksiya daşıyıcısı 
+							gəzir. Bunlardan ən çox yayılmışı həşəratlardır <strong>(tarakan, qarışqa, milçək, nəm böcəkləri və s.)</strong>. 
+							Bəzən belə çağırılmamış qonaqları təkbaşına yox etmək çox çətindir. Bu zaman həşəratlarla peşəkar 
+							mübarizə aparacağını bilən mütəxəssislərimiz Sizə köməyə gəlir . İnsanlar və ev heyvanları üçün təhlükəli 
+							xəstəliklərin daşıyıcısı olan həşəratların məhv edilməsinə yönəlmiş tədbirlər dezinseksiya adlanır.</p>
+					</div>
+				</div>
+				<a href="" class="btn secondry">Daha ətraflı</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<a class="banner"><img src="./images/banner.png"></a>
+	<div class="blog">
+		<div class="blog_list">
+			<div class="title_wrap"><h2 class="page_title title_reverse">Stay up to date with<br/> the latest news.</h2></div>
+			<div class="row" data-match-height=".item">
+				{% for i in 0..2 %}
+				<div class="col-md-4">
+					<a class="item" href="news-details.html">
+						<div class="img"><img src="images/sample/blog/list_{{i%3+1}}.png" />
+							<span class="catg">News</span>
+							<span class="date">25.12.2019</span>
+						</div>
+						<span class="title">Germs Thrive the Office!Your Health Risk?</span>
+						<span class="desc">When people at work get sick, they blame factors outside of 
+							the office. One person got the flu because his child ...</span>
+						<div class="bg-overlay"></div>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="more"><a href="news.html" class="btn primary">Daha çox</a></div>
+		</div>
+	</div>
+</div>
+{% endblock %}

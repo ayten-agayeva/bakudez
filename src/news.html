@@ -1,0 +1,27 @@
+{% extends "layout.html" %} {% block content %}
+<div class="container">
+	<div class="blog">
+		<div class="blog_list">
+			<div class="title_wrap"><h2 class="page_title">Stay up to date with<br/> the latest news.</h2></div>
+			<div class="row" data-match-height=".item">
+				{% for i in 0..8 %}
+				<div class="col-md-4">
+					<a class="item" href="news-details.html">
+						<div class="img">
+							<img src="images/sample/blog/list_{{i%3+1}}.png" />
+							<span class="catg">News</span>
+							<span class="date">25.12.2019</span>
+						</div>
+						<span class="title">Germs Thrive the Office!Your Health Risk?</span>
+						<span class="desc">When people at work get sick, they blame factors outside of 
+							the office. One person got the flu because his child ...</span>
+						<div class="bg-overlay"></div>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="more"><a href="" class="btn primary">Daha çox</a></div>
+		</div>
+	</div>
+</div>
+{% endblock %}

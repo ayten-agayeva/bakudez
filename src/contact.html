@@ -1,0 +1,53 @@
+{% extends "layout.html" %} {% block content %}
+<div class="contact_page">
+    <div class="title_wrap"><h2 class="page_title title_reverse">Contact with us for <br/>best experience.</h2></div>
+    <div class="container">
+        <form action="" method="">
+            <div class="form">
+                <div class="desc">Our team is happy to answer your questions. 
+                    Fill out the form and we’ll be in touch
+                    as soon as possible.</div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Ad, Soyad</label>
+                        <input name="name" class="validate[required]" type="text" placeholder="Alfie Solomons">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Email</label>
+                        <input name="email" class="validate[required]" type="text" placeholder="example@example.com">
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Əlaqə nömrəsi</label>
+                        <input type="text" class="validate[required]" data-mask="phone">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+						<div class="select_wrap">
+							<label>Type</label>
+							<select>
+								<option selected="selected" class="placeholder">Təklif</option>
+								<option>Irad</option>
+							  </select>
+						</div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-xs-12 message">
+                        <textarea id="message" placeholder="Mesajınızı qeyd edin." title="Mesajınızı qeyd edin."></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <button type="submit" class="btn secondry">Göndər</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="az">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"/>
+		<meta name="theme-color" content="#00387E" />
+		<meta property="author" content="Marcom" />
+		<title>Bakudez</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+		<link href="./css/style.min.css?_t={{modified_time}}" rel="stylesheet"/>
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header id="header">
+			<div class="top">
+				<div class="container">
+					<ul class="contact">
+						<li><i class="fas fa-map-marker"></i>Bakı şəh, Cavadxan 2C, AZ1100</li>
+						<li><i class="fas fa-phone-alt"></i>+994 12 430 03 43, +994 70 431 03 43</li>
+					</ul>
+					<div class="top_right">
+						<div class="search">
+							<div class="input">
+								<form action="" method="GET">
+									<input type="text" name="keyword" autocomplete="off" required="" placeholder="Axtar ...">
+									<button class="toggle"><i class="icofont-search-1"></i></button>
+								</form>
+							</div>
+						</div>
+						<div class="lang">
+							<span>AZ<i class="fas fa-caret-down"></i></span>
+							<div>
+								<a href="">EN</a>
+								<a href="">RU</a>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="navbar">
+				<div class="inner container">
+					<div>
+						<div>
+							<button class="open_side_menu"></button>
+							<a href="index.html" class="logo"><img src="images/logo.svg" /></a>
+						</div>
+						<div class="inner_side">
+							<nav>
+								<ul>
+									<li>
+										<a href="about.html">Haqqımızda</a>
+									</li>
+									<li>
+										<a href="">Xidmətlər</a>
+										<ul>
+											<li><a href="">Dezinfeksia</a></li>
+											<li><a href="">Dezinseksia</a></li>
+											<li><a href="">Deratizasiya</a></li>
+											<li><a href="">Klininq</a></li>
+											<li><a href="">Dezodarasiya</a></li>
+											<li><a href="">Havanlandırma</a></li>
+											<li><a href="">Fumiqasiya</a></li>
+											<li><a href="">Alaq otların təmizlənməsi</a></li>
+											<li><a href="">Konsultasiya xidməti</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="">Bakudez Store</a>
+									</li>
+									<li>
+										<a href="">Media Mərkəzi</a>
+									</li>
+									<li class="hamburger_menu">
+										<a class="icon"><span></span></a>
+										<ul>
+											<li><a href="">Terminalogiya</a></li>
+											<li><a href="vacancy.html">Vakansiyalar</a></li>
+											<li><a href="news.html">Bloq</a></li>
+											<li><a href="contact.html">Əlaqə</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+							<button type="button" class="open_mobile_menu"></button>
+							<a href="shopping-cart.html" class="shopping_cart"><span>0</span></a>
+							<button type="button" class="appeal primary open_side_menu">Müraciət et</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		{% block content %}{% endblock %}
+		<footer id="footer">
+			<div class="container">
+				<div class="d-flex">
+					<a class="f_logo"><img src="images/f_logo.svg" /></a>
+					<div class="f_nav">
+						<div class="social">
+							<a class="facebook"></a>
+							<a class="instagram"></a>
+							<a class="youtube"></a>
+							<a class="linkedin"></a>
+						</div>
+						<div class="f_catg">
+							<a href="">Terminalogiya</a>
+							<a href="">Vakansiyalar</a>
+							<a href="">Bloq</a>
+							<a href="">Əlaqə</a>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<div>© All rights reserved.</div>
+					<div>Bu bir <a class="marcom" href="https://marcom.az/" target="_blank">Marcom</a> məhsuludur</div>
+				</div>
+			</div>
+		</footer>
+		<div class="side_menu side_popup">
+			<div class="popup_inner">
+				<div class="container">
+					<button class="close"></button>
+					<h2>Şikayətinizi bildirin, biz sizinlə əlaqə saxlayaq!</h2>
+					<div class="desc">Mütəxəsis qrupumuz sizinlə qisa müddətdə əlaqə saxlayacaq. Təşəkkür edirik!</div>
+					<form action="" method="">
+                        <div class="form">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label>Ad, Soyad</label>
+                                    <input name="name" class="validate[required]" type="text" placeholder="Alfie Solomons" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+									<div class="select_wrap">
+										<label>Şikayət</label>
+										<select>
+											<option>Şikayətinizi seçin</option>
+											<option>Doğum günü</option>
+											<option>Evlilik</option>
+											<option>Elə-belə </option>
+										</select>
+									</div>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-xs-12">
+									<div class="select_wrap">
+										<label>Ərazi</label>
+										<select>
+											<option>Ərazi növünü seçin</option>
+											<option>Bir həftə</option>
+											<option>Bir gün əvvəl</option>
+										</select>
+									</div>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label>Ünvan</label>
+                                    <input name="email" class="validate[required,custom[email]]" type="email" placeholder="Ünvanı qeyd edin" />
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label>Əlaqə nömrəsi</label>
+                                    <input type="text" class="validate[required]" data-mask="phone" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <button type="submit" class="btn primary">Göndər</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+				</div>
+			</div>
+			<div class="bg_overlay"></div>
+		</div>
+		<div class="mobile_menu mobile_popup">
+			<div class="popup_inner">
+				<div class="search">
+					<div class="input">
+						<form action="" method="GET">
+							<input type="text" name="keyword" autocomplete="off" required="" placeholder="Axtar ...">
+							<button class="toggle"><i class="icofont-search-1"></i></button>
+						</form>
+					</div>
+				</div>
+				<div class="container">
+					<button type="button" class="appeal primary open_side_menu">Müraciət et</button>
+					<ul class="m_nav">
+						<li> <a href="#" class="m_nav_link">Haqqımızda</a></li>
+						<li> <a href="#" class="m_nav_link">Xidmətlər</a>
+						  <ul class="m_subnav">
+							<li><a href="">Dezinfeksia</a></li>
+							<li><a href="">Deratizasiya</a></li>
+							<li><a href="">Klininq</a></li>
+							<li><a href="">Dezodarasiya</a></li>
+							<li><a href="">Havanlandırma</a></li>
+							<li><a href="">Fumiqasiya</a></li>
+							<li><a href="">Alaq otların təmizlənməsi</a></li>
+							<li><a href="">Konsultasiya xidməti</a></li>
+						  </ul>
+						</li>
+						<li> <a href="#" class="m_nav_link">Bakudez Store</a></li>
+						<li> <a href="#" class="m_nav_link">Media Mərkəzi</a></li>
+						<li> <a href="#" class="m_nav_link">Terminalogiya</a></li>
+						<li> <a href="#" class="m_nav_link">Vakansiyalar</a></li>
+						<li> <a href="#" class="m_nav_link">Bloq</a></li>
+						<li> <a href="#" class="m_nav_link">Əlaqə</a></li>
+					</ul>
+				</div>
+				<div class="lang">
+					<a class="active">AZ</a>
+					<a>EN</a>
+					<a>RU</a>
+				</div>
+			</div>
+			<div class="bg_overlay"></div>
+		</div>
+		<script src="./js/vendor.min.js?_t={{modified_time}}"></script>
+		<script src="./js/script.min.js?_t={{modified_time}}"></script>
+	</body>
+</html>

@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container short_width basket">
+    <div class="title_wrap"><h2 class="page_title title_reverse">SƏBƏT</h2></div>
+	<form>
+        <div class="shopping-cart row">
+            <div class="header">
+                <div class="col-md-7 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-7 hidden-xs">product</div>
+                    </div>
+                </div>
+                <div class="col-md-5 hidden-xs">
+                    <div class="row">
+                        <div class="col-md-4 amount">amount</div>
+                        <div class="col-md-4 count">total</div>
+                        <div class="col-md-4">remove</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 first">
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-7 col-xs-12 ls">
+                            <div class="img"><img src="images/sample/product/product_3.png"/></div>
+                            <div class="detail">
+                                <div class="no">PID: <span>12020000417123</span></div>
+                                <div class="title">ALPET D2 2-1/2 Gallon Secondary Container</div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-xs-12 rs">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-3 amount"><label class="visible-xs">Amount</label>1</div>
+                                <div class="col-md-4 col-xs-4 count">
+                                    <label class="visible-xs">Price</label>20.00 AZN
+                                </div>
+                                <div class="col-md-4 col-xs-5 count"><label class="visible-xs">Total</label><span class="visible-xs">44.00 AZN</span><a class="del hidden-xs"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="del visible-xs"></a>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-7 col-xs-12 ls">
+                            <div class="img"><img src="images/sample/product/product_3.png"/></div>
+                            <div class="detail">
+                                <div class="no">PID: <span>12020000417123</span></div>
+                                <div class="title">ALPET D2 2-1/2 Gallon Secondary Container</div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-xs-12 rs">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-3 amount"><label class="visible-xs">Amount</label>1</div>
+                                <div class="col-md-4 col-xs-4 count">
+                                    <label class="visible-xs">Price</label>20.00 AZN
+                                </div>
+                                <div class="col-md-4 col-xs-5 count"><label class="visible-xs">Total</label><span class="visible-xs">44.00 AZN</span><a class="del hidden-xs"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="del visible-xs"></a>
+                </div>
+            </div>
+        </div>
+	</form>
+</div>
+<div class="delivery">
+    <form action="" method="">
+        <div class="desc">Mütəxəsis qrupumuz sizinlə qisa müddətdə əlaqə saxlayacaq. Təşəkkür edirik!</div>
+        <div class="form">
+            <div class="row">
+                <div class="col-xs-12">
+                    <label>Ad, Soyad</label>
+                    <input name="name" class="validate[required]" type="text" placeholder="Alfie Solomons">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <label>Əlaqə nömrəsi</label>
+                    <input type="text" class="validate[required]" data-mask="phone">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <label>Ünvan</label>
+                    <input name="email" class="validate[required,custom[email]]" type="email" placeholder="Ünvanı qeyd edin">
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-xs-12">
+                    <button type="submit" class="btn primary">Göndər</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
